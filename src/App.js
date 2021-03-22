@@ -7,6 +7,7 @@ import { Auth, Hub } from "aws-amplify";
 import SideBar from "./components/SideBar/SideBar";
 import { theme } from "./theme";
 import { AuthConfig } from "./authentication/config";
+import NewQuestionForm from "./components/NewQuestion/NewQuestionForm";
 
 Auth.configure(AuthConfig);
 
@@ -42,7 +43,7 @@ function App() {
           <Switch>
             <Route path="/new">
               <div style={newQuestionPlaceholder}>
-                <p>new question form goes here</p>
+                <NewQuestionForm />
               </div>
             </Route>
             <Route path="/quiz">
@@ -50,7 +51,7 @@ function App() {
             </Route>
             <Route path="/">
               <div style={newQuestionPlaceholder}>
-                <p>new question form goes here</p>
+                <NewQuestionForm />
               </div>
             </Route>
           </Switch>

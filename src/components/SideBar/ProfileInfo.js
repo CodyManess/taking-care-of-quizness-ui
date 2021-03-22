@@ -12,7 +12,7 @@ function ProfileInfo({ userName }) {
 
   return (
     <Container className={classes.root}>
-      <AccountCircleIcon color="secondary" fontSize="large" />
+      <AccountCircleIcon color="secondary" fontSize="large" />j
       <Typography variant="h5">{userName}</Typography>
     </Container>
   );
